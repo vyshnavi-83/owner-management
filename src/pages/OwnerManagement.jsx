@@ -1,4 +1,4 @@
-import { useState } from "react";
+// Owner Management Featureimport;
 import Sidebar from "../components/Sidebar";
 import OwnersTable from "../components/OwnersTable";
 import OwnerForm from "../components/OwnerForm";
