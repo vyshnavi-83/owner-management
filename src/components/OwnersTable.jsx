@@ -20,9 +20,8 @@ export default function OwnersTable({ owners, onEdit }) {
   return (
     <div className="tableCard">
 
-      <h3>Registered Owners</h3>
-
       <table>
+
         <thead>
           <tr>
             <th>Owner</th>
@@ -30,8 +29,8 @@ export default function OwnersTable({ owners, onEdit }) {
             <th>Capital</th>
             <th>Ratio</th>
             <th>Status</th>
-            <th>Actions</th>
             <th>Owner ID</th>
+            <th>Actions</th>
           </tr>
         </thead>
 
@@ -55,12 +54,13 @@ export default function OwnersTable({ owners, onEdit }) {
                 </span>
               </td>
 
+              <td>{owner.id}</td>
+
               <td>
                 <button
                   className="editBtn"
                   onClick={() => onEdit(owner)}
                 >
-                  <td>{owner.id}</td>
                   Edit
                 </button>
               </td>
@@ -69,6 +69,7 @@ export default function OwnersTable({ owners, onEdit }) {
           ))}
 
         </tbody>
+
       </table>
 
       {/* Pagination */}
@@ -82,7 +83,9 @@ export default function OwnersTable({ owners, onEdit }) {
           ◀
         </button>
 
-        <span>Page {currentPage} of {totalPages}</span>
+        <span>
+          Page {currentPage} of {totalPages}
+        </span>
 
         <button
           disabled={currentPage === totalPages}
