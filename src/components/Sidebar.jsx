@@ -1,8 +1,11 @@
+import React from "react";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <h3>FinCore ERP</h3>
+
+      <h2 className="logo">FinCore ERP</h2>
+
       <ul>
         <li>Dashboard</li>
         <li>General Ledger</li>
@@ -11,6 +14,7 @@ export default function Sidebar() {
         <li>Tax Filings</li>
         <li>Audit Logs</li>
       </ul>
+
     </div>
   );
 }

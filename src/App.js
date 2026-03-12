@@ -1,6 +1,8 @@
-
 import OwnerManagement from "./pages/OwnerManagement";
+import "./styles.css";
 
-export default function App() {
+function App() {
   return <OwnerManagement />;
 }
+
+export default App;
